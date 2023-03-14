@@ -25,11 +25,14 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 sail up
 ```
 
-### Build frontend závislostí
+Nyní by mělo být možné na localhost:8008 vidět uvítací obrazovku laravelu, v levém rohu login a přihlášení pomocí test@example.com a heslem password
+
+### Optional - Build frontend závislostí
 ```bash
 sail yarn
 ```
-### Migrace a seed
+
+### Optional - Migrace a seed
 ```bash
 sail artisan migrate:fresh --seed
 ```
