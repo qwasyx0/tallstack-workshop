@@ -28,4 +28,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/image-upload', App\Http\Livewire\Examples\ImageUpload::class)->name('examples.image-upload');
+
 require __DIR__.'/auth.php';

@@ -1,5 +1,16 @@
 # Instalace
 
+### Clone repozitáře
+```bash
+git clone https://github.com/qwasyx0/tallstack-workshop.git
+```
+
+### Vytvoření environmentu
+```bash
+cd tallstack-workshop
+cp .env.example .env
+```
+
 ### Instalace composer balíčků
 ```bash
 docker run --rm \
@@ -27,12 +38,17 @@ sail up
 
 Nyní by mělo být možné na localhost:8008 vidět uvítací obrazovku laravelu, v levém rohu login a přihlášení pomocí test@example.com a heslem password
 
-### Optional - Build frontend závislostí
+### Build frontend závislostí
 ```bash
 sail yarn
 ```
 
-### Optional - Migrace a seed
+Případně ještě 
+
+```bash
+sail yarn dev
+```
+### Migrace a seed
 ```bash
 sail artisan migrate:fresh --seed
 ```
