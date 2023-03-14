@@ -38,16 +38,18 @@ sail up
 
 Nyní by mělo být možné na localhost:8008 vidět uvítací obrazovku laravelu, v levém rohu login a přihlášení pomocí test@example.com a heslem password
 
-### Build frontend závislostí
+### Stažení frontend závislostí
 ```bash
 sail yarn
 ```
 
-Případně ještě 
+### Build frontend závislostí
 
 ```bash
-sail yarn dev
+sail yarn dev         # obdoba watch, tedy nutné pořád spuštěné
+sail yarn build       # zbuildí aktuální zdroje do public/ 
 ```
+
 ### Migrace a seed
 ```bash
 sail artisan migrate:fresh --seed

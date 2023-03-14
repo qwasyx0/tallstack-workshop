@@ -29,5 +29,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/image-upload', App\Http\Livewire\Examples\ImageUpload::class)->name('examples.image-upload');
+Route::get('/alpinejs', App\Http\Livewire\Examples\Alpinejs::class)->name('examples.alpinejs');
+Route::get('/nested', App\Http\Livewire\Examples\NestedComponents::class)->name('examples.nested');
 
 require __DIR__.'/auth.php';
